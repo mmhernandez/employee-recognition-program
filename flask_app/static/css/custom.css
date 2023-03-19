@@ -1,0 +1,50 @@
+:root {
+    --main: #FAFAFA;
+    --primary: #336B87;
+    --primary-dark: #274250;
+    --secondary: #2a3132;
+    --dark: #1e1e1e;
+    --accent: #7e5f6d; /*#32202A;*/
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* main color styling */
+.bg-main { background-color: var(--main) !important; }
+.text-main { color: var(--main) !important; }
+
+/* primary color styling */
+.bg-primary { background-color: var(--primary) !important; }
+.text-primary { color: var(--primary)  !important; }
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+    color: var(--main);
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* secondary color styling */
+.bg-secondary { background-color: #2a3132 !important; }
+.text-secondary { color: #2a3132 !important; }
+
+/* dark color styling */
+.bg-dark { background-color: #1e1e1e !important; }
+.text-dark { color: #1e1e1e !important; }
+
+/* accent color styling */
+.bg-accent { background-color: #7e5f6d !important; }
+.text-accent { color: #7e5f6d !important; }
+
+
+.shadow { box-shadow: var(--shadow); }
+
+
+
+/* footer */
+.footer-logo{
+    width: 120px;
+    height: 120px;
+}
+.footer-social { width: 30px; }
