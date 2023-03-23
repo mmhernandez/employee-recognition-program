@@ -1,11 +1,13 @@
 :root {
     --main: #FAFAFA;
+    --primary-light: #729db3;
     --primary: #336B87;
     --primary-dark: #274250;
     --secondary: #2a3132;
     --dark: #1e1e1e;
     --accent: #7e5f6d; /*#32202A;*/
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --nav-links: #838383;
 }
 
 /* main color styling */
@@ -25,6 +27,8 @@
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
 }
+.link-primary { color: var(--primary-light) !important; }
+.link-primary:hover, .link-primary:focus { color: var(--primary) !important; }
 
 /* secondary color styling */
 .bg-secondary { background-color: var(--secondary) !important; }
@@ -40,6 +44,23 @@
 .text-accent { color: var(--accent) !important; }
 
 
+/* nav bar */
+.nav-link {
+    color: var(--nav-links);
+    border-bottom: .25rem solid transparent;
+}
+.nav-link:hover, .nav-link:focus {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+.nav-link + .nav-link { margin-left: 1rem; }
+.nav-active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+
+
 .shadow { box-shadow: var(--shadow); }
 
 .form-control:focus {
@@ -53,7 +74,7 @@
 
 /* footer */
 .footer-logo{
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
 .footer-social { width: 30px; }
