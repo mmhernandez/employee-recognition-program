@@ -1,5 +1,6 @@
 :root {
     --main: #FAFAFA;
+    --light: #ebe8e6;  /*#e7e3df;*/
     --primary-light: #729db3;
     --primary: #336B87;
     --primary-dark: #274250;
@@ -13,6 +14,19 @@
 /* main color styling */
 .bg-main { background-color: var(--main) !important; }
 .text-main { color: var(--main) !important; }
+/* .btn-main {
+    color: var(--dark);
+    background-color: var(--main);
+    border-color: var(--nav-links);
+}
+.btn-main:hover {
+    color: var(--main);
+    background-color: var(--primary);
+    border-color: var(--primary);
+} */
+
+/* light color styling */
+.bg-light { background-color: var(--light) !important; }
 
 /* primary color styling */
 .bg-primary { background-color: var(--primary) !important; }
@@ -24,8 +38,18 @@
 }
 .btn-outline-primary:hover {
     color: var(--main);
-    background-color: var(--primary-dark);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary {
+    color: var(--main);
+    background-color: var(--primary);
     border-color: var(--primary-dark);
+}
+.btn-primary:hover {
+    color: var(--main);
+    background-color: var(--primary-dark);
+    border-color: var(--primary);
 }
 .link-primary { color: var(--primary-light) !important; }
 .link-primary:hover, .link-primary:focus { color: var(--primary) !important; }
@@ -34,6 +58,16 @@
 .bg-secondary { background-color: var(--secondary) !important; }
 .text-secondary { color: var(--secondary) !important; }
 .border-secondary { border-color: var(--secondary) !important; }
+.btn-secondary {
+    color: var(--main);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+.btn-secondary:hover {
+    color: var(--accent);
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
 
 /* dark color styling */
 .bg-dark { background-color: var(--dark) !important; }
