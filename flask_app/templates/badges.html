@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- STYLING -->
-    <!-- {% includes 'template_styling.html' %} -->
+    {# <!-- STYLING -->
+    <!-- {% includes 'template_styling.html' %} --> #}
     <link rel="stylesheet" href="../static/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/custom.css">
 </head>
@@ -61,10 +61,31 @@
             <div class="card" style="width: 13rem;">
                 <img src="../static/images/awesome_1.png" class="card-img-top mt-2" alt="five_star_performer">
                 <div class="card-body mx-auto">
-                    <a href="#" class="btn btn-secondary">Select</a>
+                    <!-- <a href="#" class="btn btn-secondary">Select</a> -->
+                    <!-- Button to trigger modal -->
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#badgeModal">Select</button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="badgeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="badgeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="badgeModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 13rem;">
+            <!-- <div class="card" style="width: 13rem;">
                 <img src="../static/images/awesome_2.png" class="card-img-top mt-2" alt="five_star_performer">
                 <div class="card-body mx-auto">
                     <a href="#" class="btn btn-secondary">Select</a>
@@ -165,15 +186,15 @@
                 <div class="card-body mx-auto">
                     <a href="#" class="btn btn-secondary">Select</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
-    <!-- CREATE YOUR OWN BADGE -->
+    {# <!-- CREATE YOUR OWN BADGE --> #}
 
 
-    <!-- FOOTER -->
-    <!-- {% includes 'template_footer.html' %} -->
+        {# <!-- FOOTER -->
+    <!-- {% includes 'template_footer.html' %} --> #}
     <footer class="bg-secondary text-light mt-3 w-100 h-100 mx-auto">
         <div class="d-flex w-75 h-100 pt-5 mx-auto d-flex justify-content-between gap-5">
             <div class="mb-5 overflow">
