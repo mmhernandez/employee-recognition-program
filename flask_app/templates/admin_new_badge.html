@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Appreciation</title>
+    <title>Document</title>
 
     {# <!-- STYLING -->
     <!-- {% includes 'template_styling.html' %} --> #}
@@ -12,32 +12,33 @@
     <link rel="stylesheet" href="../static/css/custom.css">
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg py-3 bg-main">
+    <nav class="navbar sticky-top navbar-expand-lg py-3 bg-main">
         <div class="container-fluid w-75">
             <a class="navbar-brand text-primary" href="#">
                 <img src="../static/images/star.png" alt="Bootstrap" width="30" height="24"> Staff Appreciation Program
             </a>
-            <button class="navbar-toggler rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-main">...</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link nav-active link-secondary" aria-current="page" href="#">Home</a>
+                        <a class="nav-link link-secondary" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-secondary" aria-current="page" href="/badges">Send a Badge</a>
+                        <a class="nav-link nav-active link-secondary" href="#">Badges</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-secondary" aria-current="page" href="#">Give Kudos</a>
+                        <a class="nav-link link-secondary" href="#">Kudos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-secondary" aria-current="page" href="#">My Kudos</a>
+                        <a class="nav-link link-secondary" href="#">Users</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item d-flex">
-                        <a class="nav-link link-secondary" href="#">Account</a>
+                        <a class="nav-link link-secondary" href="#">Account Type</a>  
+                        <!-- change to a drop-down for the admin/hr user to select if they are looking at the "admin" (this) page set, or the user page set -->
                     </li>
                     <li class="nav-item d-flex">
                         <a class="nav-link link-secondary" href="#">Logout</a>
@@ -47,13 +48,27 @@
         </div>
     </nav>
 
-    {# <!-- HIGHLIGHTS -->
-    <!-- Display the last 10 or so kudos -->
-    <!-- Employees can "like" a kudos given to someone (cannot like kudos they've given) -->#}
-
-
-    {# <!-- CHECK THESE OUT -->
-    <!-- Display the top "liked" kudos -->#}
+    <!-- CREATE BADGE -->
+    <section class="container rounded w-25 my-5 mx-auto bg-main">
+        <h1 class="text-center text-secondary my-4 py-4">New Badge</h1>
+        <form action="" class="p-4">
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="name">Badge name</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="name">Badge name</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Badge Image</label>
+                <input type="file" name="image" class="form-control">
+            </div>
+            
+        </form>
+    </section>
 
 
     {# <!-- FOOTER -->
