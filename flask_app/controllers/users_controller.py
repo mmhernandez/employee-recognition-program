@@ -9,7 +9,6 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
-
 config = cloudinary.config(secure = True)
 
 
@@ -27,27 +26,25 @@ def new_badge():
 
 @app.route("/create_badge", methods=["POST"])
 def insert_badge():
-    print(f'request.form = {request.form}')
-
     uploaded_img = request.files['image']
-
     folder = "badges"
 
     # Upload the image: set the asset's public ID and allow overwriting the asset with new versions
     cloudinary.uploader.upload(uploaded_img, folder=folder, public_id=request.form["name"], unique_filename=False, overwrite=True, tags=request.form["category"])
 
     # Build the URL for the image and save it in the variable 'srcURL'
-    srcURL = cloudinary.CloudinaryImage(f'badges/{request.form["name"]}').build_url()
-
-    # Log the image URL to the console.
-    # Copy this URL in a browser tab to generate the image on the fly.
-    print("****2. Upload an image****\nDelivery URL: ", srcURL, "\n")
-
+    srcURL = cloudinary.CloudinaryImage(f'{folder}/{request.form["name"]}').build_url()
+    # srcURL EXAMPLE: https://res.cloudinary.com/yellowsunhat/image/upload/v1/badges/thank_you_2
     return redirect ("/badges")
+
 
 ### STAFF USER ###
 # BADGES
 @app.route("/badges")
 def badges():
     # need to add session check to protect route
+    result = cloudinary.api\
+    .resources()
+
+
     return render_template("badges.html")
