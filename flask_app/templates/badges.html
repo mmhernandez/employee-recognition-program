@@ -49,7 +49,6 @@
 
     <!-- BADGE CARDS -->
 
-
         <section class="container w-75 mt-5">
             <p class="fs-3">Badge categories</p>
             <p>Send a badge to a fellow employee! Badges are quick, easy ways to show your appreciation for every-day occurrences.</p>
@@ -70,27 +69,32 @@
                         <!-- Modal -->
                         <div class="modal fade" id="badgeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="badgeModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="badgeModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="badgeModalLabel">Send Badge</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <form action="">
+                                        <div class="modal-body">
+                                            <label for="employee" class="form-label">Recipient</label>
+                                            <select class="form-select" aria-label="Default select example" name="employee">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <a href="" class="btn btn-primary">Send</a>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="modal-body">
-                                ...
-                                </div>
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-    {# <!-- CREATE YOUR OWN BADGE --> #}
 
 
         {# <!-- FOOTER -->

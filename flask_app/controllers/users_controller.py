@@ -43,8 +43,7 @@ def insert_badge():
 @app.route("/badges")
 def badges():
     # need to add session check to protect route
-    result = cloudinary.api\
-    .resources()
+    result = cloudinary.api.resources()
 
 
     return render_template("badges.html")
