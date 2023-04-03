@@ -6,9 +6,10 @@
     --primary-dark: #274250;
     --secondary: #2a3132;
     --dark: #1e1e1e;
+    --accent-light: #d8d1d4;
     --accent: #7e5f6d; /*#32202A;*/
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    --nav-links: #838383;
+    --nav-links: #cccccc;
 }
 
 /* main color styling */
@@ -68,6 +69,8 @@
     background-color: var(--dark);
     border-color: var(--dark);
 }
+.link-secondary { color: var(--secondary) !important; }
+.link-secondary:hover, .link-secondary:focus { color: var(--primary) !important; }
 
 /* dark color styling */
 .bg-dark { background-color: var(--dark) !important; }
@@ -79,11 +82,28 @@
 
 
 /* nav bar */
-.nav-link {
-    color: var(--nav-links);
-    border-bottom: .25rem solid transparent;
+.vertical-nav {
+    margin: 0;
+    padding: 0;
+    width: 9%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover:not(.nav-active) > .vertical-nav-icon {
+    background-color: var(--nav-links);
+}
+.nav-active > .vertical-nav-icon {
+    background-color: var(--primary-light);
+    color: var(--main);
+} 
+
+/* HORIZONTAL */
+/* .nav-link {
+    color: var(--nav-links);
+    /* border-bottom: .25rem solid transparent; 
+} */
+/* .nav-link:hover, .nav-link:focus {
     color: var(--primary);
     border-bottom-color: var(--primary);
 }
@@ -91,7 +111,8 @@
 .nav-active {
     color: var(--primary);
     border-bottom-color: var(--primary);
-}
+} */
+
 
 .shadow { box-shadow: var(--shadow); }
 
