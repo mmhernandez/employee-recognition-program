@@ -86,9 +86,9 @@
     margin: 0;
     padding: 0;
     width: 9%;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    height: 100%; 
+    position: fixed; 
+    overflow: auto; 
 }
 .nav-link:hover:not(.nav-active) > .vertical-nav-icon {
     background-color: var(--nav-links);
@@ -98,20 +98,24 @@
     color: var(--main);
 } 
 
-/* HORIZONTAL */
-/* .nav-link {
-    color: var(--nav-links);
-    /* border-bottom: .25rem solid transparent; 
-} */
-/* .nav-link:hover, .nav-link:focus {
-    color: var(--primary);
-    border-bottom-color: var(--primary);
+
+/* banner images */
+.banner-img-home, .banner-img-badges {
+    border-radius: 8px;
+    max-width: 90vw;
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.nav-link + .nav-link { margin-left: 1rem; }
-.nav-active {
-    color: var(--primary);
-    border-bottom-color: var(--primary);
-} */
+.banner-img-home { 
+    background-image: url(../images/wow.jpg); 
+    filter: hue-rotate(180deg);
+}
+.banner-img-badges { 
+    background-image: url(../images/hard_work.jpg); 
+    opacity: 80%;
+}
 
 
 .shadow { box-shadow: var(--shadow); }

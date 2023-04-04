@@ -6,46 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    {# <!-- STYLING -->
-    <!-- {% includes 'template_styling.html' %} --> #}
-    <link rel="stylesheet" href="../static/css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/custom.css">
+    <!-- STYLING -->
+    {% include 'template_styling.html' %}
+    
 </head>
 <body class="bg-light">
-    <!-- <nav class="navbar sticky-top navbar-expand-lg py-3 bg-main">
-        <div class="container-fluid w-75">
-            <a class="navbar-brand text-primary" href="#">
-                <img src="../static/images/star.png" alt="Bootstrap" width="30" height="24"> Staff Appreciation Program
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link link-secondary" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-active link-secondary" href="#">Send a Badge</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-secondary" href="#">Give Kudos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-secondary" href="#">My Kudos</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item d-flex">
-                        <a class="nav-link link-secondary" href="#">Account</a>
-                    </li>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link link-secondary" href="#">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
+
     <nav class="vertical-nav d-flex flex-column justify-content-between bg-main">
         <ul class="list-unstyled px-2 py-3 text-center">
             <li class="mt-2 mb-3">
@@ -117,7 +83,8 @@
 
     <!-- BADGE CARDS -->
     <main style="margin-left:9%; padding:1px 0px;">
-        <section class="container w-75 mt-5">
+        <div class="banner-img-badges m-3 shadow"></div>
+        <section class="container mx-5 px-5 my-5">
             <p class="fs-3">Badge categories</p>
             <p>Send a badge to a fellow employee! Badges are quick, easy ways to show your appreciation for every-day occurrences.</p>
             <div class="container gap-2 row mb-4 overflow">
@@ -128,7 +95,7 @@
             </div>
             <div class="container row row-cols-1 gap-4">
                 <div class="card" style="width: 13rem;">
-                    <img src="../static/images/awesome_1.png" class="card-img-top mt-2" alt="five_star_performer">
+                    <img src="../static/images/badges/awesome_1.png" class="card-img-top mt-2" alt="five_star_performer">
                     <div class="card-body mx-auto">
                         <!-- <a href="#" class="btn btn-secondary">Select</a> -->
                         <!-- Button to trigger modal -->

@@ -44,7 +44,7 @@
             </div>
         </div>
     </nav> -->
-    <nav class="vertical-nav d-flex flex-column justify-content-between bg-main">
+    <nav class="vertical-nav d-flex flex-column justify-content-between bg-main shadow">
         <ul class="list-unstyled px-2 py-3 text-center">
             <li class="mt-2 mb-3">
                 <a class="nav-link link-secondary nav-active" href="#">
@@ -114,10 +114,11 @@
     </nav>
 
     <main style="margin-left:9%; padding:1px 0px;">
+        <div class="banner-img-home m-3 shadow"></div>
         <!-- HIGHLIGHTS -->
-        <section class="container w-75 my-5">
-            <p class="fs-2">Highlights</p>
-            <p>Check out these recent team Kudos!</p>
+        <section class="container mx-5 px-5 my-5">
+            <p class="fs-2 text-secondary">Highlights</p>
+            <p class="text-secondary">Check out these recent team Kudos!</p>
             <div>
                 <!-- loop through kudos here -->
                 <!-- Display the last 10 or so kudos -->
@@ -125,10 +126,13 @@
             </div>
         </section>
 
-        {# <!-- CHECK THESE OUT -->
-        <!-- Display the top "liked" kudos -->#}
-        <section>
-
+        <!-- CHECK THESE OUT -->
+        <section class="container mx-5 px-5 my-5">
+            <p class="fs-2 text-secondary">Leaderboard</p>
+            <p class="text-secondary">The top liked kudos</p>
+            <div>
+                <!-- Display the top "liked" kudos -->
+            </div>
         </section>
     
 
