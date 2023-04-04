@@ -47,3 +47,10 @@ def badges():
 
 
     return render_template("badges.html")
+
+
+# ACCOUNT
+@app.route("/account")
+def view_account():
+    # need to add session check to protect route
+    return render_template("account.html")

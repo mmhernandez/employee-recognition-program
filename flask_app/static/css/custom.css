@@ -100,7 +100,7 @@
 
 
 /* banner images */
-.banner-img-home, .banner-img-badges {
+.banner-img-home, .banner-img-badges, .banner-img-account {
     border-radius: 8px;
     max-width: 90vw;
     height: 20vh;
@@ -116,7 +116,9 @@
     background-image: url(../images/hard_work.jpg); 
     opacity: 80%;
 }
-
+.banner-img-account { 
+    background-image: url(../images/you.jpg); 
+}
 
 .shadow { box-shadow: var(--shadow); }
 
@@ -126,6 +128,31 @@
     border-color: var(--primary-dark);
     /* outline: 0; */
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control, .form-control:disabled {
+    padding: 12px 16px 12px 39px;
+    height: 50px;
+    font-size: 14px;
+    color: #2b2a2a;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+    background-color: var(--light);
+}
+.form-control:focus{
+    border-color: #3f9cb5;
+    box-shadow: none;
+}
+.control-label{
+    font-size: 17px;
+    color: #ccc;
+    /* position: absolute; */
+    top: 5px;
+    left: 27px;
+    text-align: center;
 }
 
 .file-preview {
